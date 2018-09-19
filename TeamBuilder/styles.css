@@ -1,0 +1,20 @@
+p{
+text-decoration: underline;
+Color:red;
+}
+li {
+  font-size: 24px;
+}
+    ul li {
+  font-size: 24px;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  color: darkred;
+}
+ ol li:first-child {
+  color: red;
+}

@@ -35,21 +35,42 @@
             padding: 3rem 1.5rem;
             text-align: center;
         }
-        
-      .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: red;
-    color: white;
-    text-align: center;
+    
+        .dot {
+    height: 125px;
+    width: 125px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+            text-align: center;
+              /* become a flex container */
+  /* its children will be flex items */
+  display: flex;
+  /* place items in column */
+  flex-direction: column;
+  /* center flex items horizontally */
+  align-items: center;
+  /* center all content vertically */
+  justify-content: center;
 }
- 
         
- #footer .social-icons {
-    float: right;
-  }
+        .classWithPad { margin:10px; padding:10px; }
+        
+        
+        
+        .footer {
+ /*  position: absolute; */
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background-color: yellow;
+}
+
+nav {
+  display: flex
+}
+        
     </style>
 </head>
 
@@ -89,30 +110,115 @@
         </div>
     </nav>
 
-    <main role="main" class="container">
-
-      
-      <div id="teamlist">
-  
-        </div>
-       
-
-    </main>
+    <main role="main" class="container" style="padding-bottom:10px">
     
-      <footer id="footer">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm-6">
-                        © 2018 Team Builder.
-                    </div>
-                    <div class="col-sm-6">
-                        
-                    </div>
-                </div>
-            </div>
-        </footer>
 
+    
+    <div class="row">
+       <div class="col-md-12">
+       <hr> 
+        </div>
+    </div>
+    
+    
+
+    
+    <div class="row">
+           
+       <div class="col-md-4" align="center">
+       <div class="classWithPad">         
+          <div class="dot">Employee Information</div>
+           </div>
+        </div>
+        
+     <div class="col-md-8">
+        <div class="classWithPad">
+        
+        <!---add code here -->
+        <labe> Name</labe>
+        
+        <p>
+            I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me and you can start adding your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to write more. Tell a story about yourself.
+         </p>
+         
+         
+         </div>
+        </div>
+    </div>
+    
+    
+    
+    <div class="row">
+       <div class="col-md-12">
+       <hr> 
+        </div>
+    </div>
+    <div class="row">
+      
+       
+       <div class="col-md-4" align="center">
+       <div class="classWithPad">
+        
+            
+          <div class="dot">only one line</div>
+           </div>
+        </div>
+        
+        <div class="col-md-8">
+        <div class="classWithPad">
+        <p>
+            I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me and you can start adding your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to write more. Tell a story about yourself.
+        </p></div>
+        </div>
+    </div>
+    
+       <div class="row">
+       <div class="col-md-12">
+       <hr> 
+        </div>
+    </div>
+    <div class="row">
+      
+       
+       <div class="col-md-4" align="center">
+       <div class="classWithPad">
+        
+            
+          <div class="dot">only one line</div>
+           </div>
+        </div>
+        
+        <div class="col-md-8">
+        <div class="classWithPad">
+        <p>
+            I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me and you can start adding your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to write more. Tell a story about yourself.
+        </p></div>
+        </div>
+    </div>
+   
+    </main>
     <!-- /.container -->
+<footer class="footer">
+  <!-- <div class="container-fluid"> -->
+  <nav>
+    <li><a href="https://www.facebook.com/lucas.stahl.75">
+        <i class="fa fa-facebook"></i>
+    </a></li>
+    <li><a href="https://twitter.com/LucasStahl11">
+        <i class="fa fa-twitter"></i>
+    </a></li>
+
+    <li><a href="https://www.linkedin.com/in/lucasstahl">
+        <i class="fa fa-linkedin"></i>
+        </a></li>
+    <li><a href="https://lucasstahl.wordpress.com/">
+        <i class="fa fa-wordpress"></i>
+        </a></li>
+
+    <li id="copyRight">@Copyright 2018 teambuilder</li>
+  </nav>
+  <!-- </div> -->
+</footer>
 
 
     <!-- Bootstrap core JavaScript
